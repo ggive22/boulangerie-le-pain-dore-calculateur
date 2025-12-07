@@ -1,6 +1,12 @@
 # Définition des recettes sous forme de dictionnaires
 # Chaque dictionnaire représente les ingrédients nécessaires pour un type de produit
-
+def try_user(prompt):
+    while True:
+        try:
+            user = int(input(prompt))
+            return user
+        except ValueError: 
+            print("Error => Entrer invalide")
 # Recette pour les baguettes
 bagguettes = {
     "farine": 250,  # grammes par baguette
